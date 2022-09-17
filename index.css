@@ -1,0 +1,85 @@
+body {
+    margin: auto; 
+    color: black;
+    background-color: #1A1818;
+}
+h3 {
+    color: #5A537B;
+}
+p{
+    color: #353535;
+}
+#container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    background-color: #F4F4F4;
+    margin: 2rem;
+    max-height: 60%;
+    width: 35rem;
+    border: 10px solid white;
+    border-radius: 20px;
+}
+#unit-index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #6943FF;
+    height: 15rem;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px 15px 0 0; 
+}
+#unit-value{
+    display: flex;
+    width: 6rem;
+    height: 4rem;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    background-color: #6943FF;
+    border: 2px solid #B295FF;
+    border-radius: 5px;
+    
+}
+#convert-btn{
+    width: 6.5rem;
+    height: 2rem;
+    justify-content: center;
+    align-content: center;
+    border-radius: 5px;
+    border-style: none;
+    font-weight: bold;
+    color: #6943FF
+}
+#result-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    align-content: center;
+    margin: 5px 15px;
+    height: 28rem;    
+}
+#length-div {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+ 
+}
+#volume-div{
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+#mass-div {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
