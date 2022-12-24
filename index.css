@@ -1,5 +1,7 @@
 body {
-    margin: auto; 
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 auto; 
     color: black;
     background-color: #1A1818;
 }
@@ -9,44 +11,44 @@ h3 {
 p{
     color: #353535;
 }
+
 #container {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-content: center;
     background-color: #F4F4F4;
-    margin: 2rem;
-    max-height: 60%;
-    width: 35rem;
+    justify-content: center;
+    margin: auto;
+    width: 75%;
     border: 10px solid white;
     border-radius: 20px;
 }
 #unit-index {
-    display: flex;
-    flex-direction: column;
+    font-size: .75em;
     justify-content: center;
     align-items: center;
-    background-color: #6943FF;
     height: 15rem;
+    background-color: #6943FF;
     color: white;
-    font-weight: bold;
     border-radius: 15px 15px 0 0; 
 }
 #unit-value{
-    display: flex;
+    display: inline-flex;
     width: 6rem;
     height: 4rem;
+    font-size: 3rem;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     text-align: center;
-    font-size: 3rem;
-    font-weight: bold;
     color: white;
     background-color: #6943FF;
     border: 2px solid #B295FF;
     border-radius: 5px;
-    
+    margin-bottom: 1rem;
+}
+#result-body{
+    justify-content: space-around;
+    text-align: center;
+    margin: 5px 15px;
+    height: 28rem;    
 }
 #convert-btn{
     width: 6.5rem;
@@ -55,31 +57,45 @@ p{
     align-content: center;
     border-radius: 5px;
     border-style: none;
-    font-weight: bold;
     color: #6943FF
 }
-#result-body{
+
+/* shared styles */
+#container,
+#unit-index,
+#result-body {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    text-align: center;
-    align-content: center;
-    margin: 5px 15px;
-    height: 28rem;    
 }
-#length-div {
-    background-color: white;
-    padding: 15px;
-    border-radius: 10px;
- 
+
+#unit-index,
+#unit-value,
+#convert-btn {
+    font-weight: bold;
 }
-#volume-div{
-    background-color: white;
-    padding: 15px;
-    border-radius: 10px;
-}
+
+#length-div,
+#volume-div, 
 #mass-div {
     background-color: white;
     padding: 15px;
     border-radius: 10px;
+}
+
+/* media Queries */
+
+@media (max-width: 550px){
+    #container{
+        max-width: 350px;
+    }
+    #unit-index {
+        font-size: .55em;
+    }
+
+}
+
+@media (min-width: 551px){
+    #container {
+        max-width: 600px;
+    }
 }

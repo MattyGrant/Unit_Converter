@@ -5,26 +5,32 @@
 			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" />
 
 		<link rel="stylesheet" href="index.css" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap"
+			rel="stylesheet" />
 	</head>
 	<body>
 		<div id="container">
 			<div id="unit-index">
 				<h1>Metric/Imperial Unit Converter</h1>
-				<input type="text" id="unit-value" /> <br />
+				<input type="text" id="unit-value" />
 				<button id="convert-btn">Convert</button>
 			</div>
 			<div id="result-body">
-				<div id="length-div">
+				<div id="length-div" class="result">
 					<h3 id="length-header">Length (Meters/Feet)</h3>
 					<p id="length-el"></p>
 				</div>
 
-				<div id="volume-div">
+				<div id="volume-div" class="result">
 					<h3 id="volume-header">Volume (Liters/Gallons)</h3>
 					<p id="volume-el"></p>
 				</div>
 
-				<div id="mass-div">
+				<div id="mass-div" class="result">
 					<h3 id="mass-header">Mass (Kilograms/Pounds)</h3>
 					<p id="mass-el"></p>
 				</div>
