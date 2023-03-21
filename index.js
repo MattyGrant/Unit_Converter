@@ -18,12 +18,18 @@ function displayCalc() {
 	let impVolume = value / 0.264;
 	let metMass = value * 2.204;
 	let impMass = value / 2.204;
-	lengthEl.textContent = `${value} meters = ${metLength.toFixed(
+
+	//Length
+	lengthEl.textContent = ` ${value} meters = ${metLength.toFixed(
 		3,
 	)} feet | ${value} feet = ${impLength.toFixed(3)} meters`;
+
+	// Volume
 	volumeEl.textContent = `${value} liters = ${metVolume.toFixed(
 		3,
 	)} gallons | ${value} gallons = ${impVolume.toFixed(3)} liters`;
+
+	// Mass
 	massEl.textContent = `${value} kilograms = ${metMass.toFixed(
 		3,
 	)} pounds | ${value} pounds = ${impMass.toFixed(3)} kilograms`;
